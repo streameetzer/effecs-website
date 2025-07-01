@@ -71,7 +71,7 @@ const config: Config = {
   ],
 
   plugins: [
-    [
+    process.env.TYPEDOC_DISABLED ? undefined : [
       'docusaurus-plugin-typedoc',
       {
         entryPoints: ['../../packages/effecs/index.mjs'],
@@ -83,6 +83,7 @@ const config: Config = {
         out: 'docs/api', // cleared automatically
         entryFileName: 'API',
         hidePageTitle: true,
+        disableSources: true,
       },
     ],
   ],
