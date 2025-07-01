@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_effecs_website=self.webpackChunk_effecs_website||[]).push([[604],{4923:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"Category","slug":"/category/category","permalink":"/docs/category/category","sidebar":"effecsDocumentation","navigation":{"next":{"title":"Hello Page","permalink":"/docs/start-group/hello"}}}}')}}]);
