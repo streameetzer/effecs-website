@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Effecs Blog</title>
-        <link>https://your-docusaurus-site.example.com/blog</link>
+        <link>https://your-docusaurus-site.example.com/effecs-website/blog</link>
         <description>Effecs Blog</description>
         <lastBuildDate>Wed, 01 Jan 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>en</language>
         <item>
             <title><![CDATA[Greetings!]]></title>
-            <link>https://your-docusaurus-site.example.com/blog/greetings</link>
-            <guid>https://your-docusaurus-site.example.com/blog/greetings</guid>
+            <link>https://your-docusaurus-site.example.com/effecs-website/blog/greetings</link>
+            <guid>https://your-docusaurus-site.example.com/effecs-website/blog/greetings</guid>
             <pubDate>Wed, 01 Jan 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Congratulations, you have made your first post!]]></description>
             <content:encoded><![CDATA[<p>Congratulations, you have made your first post!</p>

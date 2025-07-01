@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://your-docusaurus-site.example.com/blog</id>
+    <id>https://your-docusaurus-site.example.com/effecs-website/blog</id>
     <title>Effecs Blog</title>
     <updated>2025-01-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://your-docusaurus-site.example.com/blog"/>
+    <link rel="alternate" href="https://your-docusaurus-site.example.com/effecs-website/blog"/>
     <subtitle>Effecs Blog</subtitle>
-    <icon>https://your-docusaurus-site.example.com/img/favicon.ico</icon>
+    <icon>https://your-docusaurus-site.example.com/effecs-website/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Greetings!]]></title>
-        <id>https://your-docusaurus-site.example.com/blog/greetings</id>
-        <link href="https://your-docusaurus-site.example.com/blog/greetings"/>
+        <id>https://your-docusaurus-site.example.com/effecs-website/blog/greetings</id>
+        <link href="https://your-docusaurus-site.example.com/effecs-website/blog/greetings"/>
         <updated>2025-01-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Congratulations, you have made your first post!]]></summary>
         <content type="html"><![CDATA[<p>Congratulations, you have made your first post!</p>
