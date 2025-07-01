@@ -1,4 +1,6 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+import type { SidebarItemConfig } from '@docusaurus/plugin-content-docs/src/sidebars/types.js';
+import typedocSidebar from './docs/api/typedoc-sidebar';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -24,6 +26,14 @@ const sidebars: SidebarsConfig = {
       items: ['start-group/hello'],
     },
     'start-group/hello',
+    {
+      type: 'link',
+      label: 'API',
+      href: '/docs/api'
+    },
+  ],
+  typedocSidebar: [
+    ...(typedocSidebar.items as SidebarItemConfig[]),
   ],
 };
 

@@ -70,6 +70,23 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      'docusaurus-plugin-typedoc',
+      {
+        entryPoints: ['../../packages/effecs/index.mjs'],
+        tsconfig: '../../packages/effecs/tsconfig.json',
+        watch: process.env.TYPEDOC_WATCH,
+        sidebar: {
+          typescript: true
+        },
+        out: 'docs/api', // cleared automatically
+        entryFileName: 'API',
+        hidePageTitle: true,
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -84,6 +101,12 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'effecsDocumentation',
           label: 'Docs',
+          position: 'left',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'typedocSidebar',
+          label: 'API',
           position: 'left',
         },
         {
