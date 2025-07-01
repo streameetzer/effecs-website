@@ -1,0 +1,11 @@
+author:
+  name: John Doe
+  title: employee
+  url: https://john.doe
+  image_url: /img/favicon.ico # or https://john.doe/john.png
+  page: true
+  socials:
+    github: johndoe
+    youtube: johndoe
+    other: https://john.doe/about
+
