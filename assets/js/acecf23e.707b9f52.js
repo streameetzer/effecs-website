@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_effecs_website=self.webpackChunk_effecs_website||[]).push([[903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/effecs/blog","blogTitle":"Blog","authorsListPath":"/effecs/blog/authors"}')}}]);

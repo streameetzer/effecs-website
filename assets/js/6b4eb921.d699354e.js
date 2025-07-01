@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_effecs_website=self.webpackChunk_effecs_website||[]).push([[222],{5538:e=>{e.exports=JSON.parse('{"tags":[{"label":"Hello","permalink":"/effecs-website/blog/tags/hello","description":"Hello tag description","count":1}]}')}}]);
