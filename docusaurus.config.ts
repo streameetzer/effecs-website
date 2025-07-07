@@ -4,25 +4,6 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-const plugins: Config['plugins'] = []
-if (!process.env.TYPEDOC_DISABLED) {
-  plugins.push([
-      'docusaurus-plugin-typedoc',
-      {
-        entryPoints: ['../../packages/effecs/index.mjs'],
-        tsconfig: '../../packages/effecs/tsconfig.json',
-        watch: process.env.TYPEDOC_WATCH,
-        sidebar: {
-          typescript: true
-        },
-        out: 'docs/api', // cleared automatically
-        entryFileName: 'API',
-        hidePageTitle: true,
-        disableSources: true,
-      },
-    ])
-}
-
 const config: Config = {
   title: 'Effecs',
   tagline: 'streameetzer',
@@ -88,8 +69,6 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
-  plugins,
 
   themeConfig: {
     // Replace with your project's social card

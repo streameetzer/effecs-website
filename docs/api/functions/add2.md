@@ -1,4 +1,4 @@
-> **add2**(`n`): `any`
+> **add2**(`n`): `number`
 
 ## Parameters
 
@@ -10,7 +10,7 @@ number
 
 ## Returns
 
-`any`
+`number`
 
 sum of `n` and 2
 

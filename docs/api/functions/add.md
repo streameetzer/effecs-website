@@ -1,4 +1,4 @@
-> **add**(`a`, `b`): `any`
+> **add**(`a`, `b`): `number`
 
 Adds two numbers.
 
@@ -6,18 +6,18 @@ Adds two numbers.
 
 ### a
 
-`any`
+`number`
 
 first number
 
 ### b
 
-`any`
+`number`
 
 second number
 
 ## Returns
 
-`any`
+`number`
 
 sum of `a` and `b`

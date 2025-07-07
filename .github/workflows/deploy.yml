@@ -15,16 +15,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          # cache disabled: no package-lock.json either
-          # cache: npm
+      - name: Install bun
+        uses: oven-sh/setup-bun@v2
 
       - name: Install dependencies
-        run: npm install
+        run: bun install
       - name: Build website
-        run: TYPEDOC_DISABLED=true npm run build
+        run: bun run build
 
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3

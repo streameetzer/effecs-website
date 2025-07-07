@@ -3,16 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "cross-env TYPEDOC_WATCH=true docusaurus start",
-    "build": "cross-env TYPEDOC_WATCH=false docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "docusaurus": "bunx --bun docusaurus",
+    "doc:start": "bunx --bun docusaurus start",
+    "doc:build": "bunx --bun docusaurus build",
+    "swizzle": "bunx --bun docusaurus swizzle",
+    "deploy": "bunx --bun docusaurus deploy",
+    "clear": "bunx --bun docusaurus clear",
+    "serve": "bunx --bun docusaurus serve",
+    "write-translations": "bunx --bun docusaurus write-translations",
+    "write-heading-ids": "bunx --bun docusaurus write-heading-ids",
+    "typecheck": "bunx --bun tsc",
+    
+    "add": "bun add",
+    "remove": "bun remove"
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",
@@ -27,7 +30,6 @@
     "@docusaurus/module-type-aliases": "3.8.1",
     "@docusaurus/tsconfig": "3.8.1",
     "@docusaurus/types": "3.8.1",
-    "cross-env": "^7.0.3",
     "docusaurus-plugin-typedoc": "^1.4.0",
     "typedoc": "^0.28.7",
     "typedoc-plugin-markdown": "^4.7.0",
