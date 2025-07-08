@@ -21,13 +21,13 @@
     "write-translations": "bunx --bun docusaurus write-translations",
     "write-heading-ids": "bunx --bun docusaurus write-heading-ids",
     "typecheck": "bunx --bun tsc",
-    "format": "prettier . --write --experimental-cli",
+    "format": "prettier . --write --experimental-cli --config-path ../../.prettierrc",
     "add": "bun add",
     "remove": "bun remove",
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{ts,tsx,css,json,md}": [
+    "*.{ts,tsx,html,css,json,md,mdx}": [
       "prettier --write"
     ]
   },
