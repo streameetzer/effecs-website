@@ -13,9 +13,15 @@
     "write-translations": "bunx --bun docusaurus write-translations",
     "write-heading-ids": "bunx --bun docusaurus write-heading-ids",
     "typecheck": "bunx --bun tsc",
-    
+    "format": "prettier . --write --experimental-cli",
     "add": "bun add",
-    "remove": "bun remove"
+    "remove": "bun remove",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,css,json,md}": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",
@@ -31,7 +37,11 @@
     "@docusaurus/tsconfig": "3.8.1",
     "@docusaurus/types": "3.8.1",
     "@effecs/core": "workspace:*",
+    "@ianvs/prettier-plugin-sort-imports": "catalog:",
     "docusaurus-plugin-typedoc": "^1.4.0",
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "prettier": "catalog:",
     "typedoc": "^0.28.7",
     "typedoc-plugin-markdown": "^4.7.0",
     "typescript": "~5.6.2"
