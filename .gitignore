@@ -5,8 +5,8 @@
 /build
 
 # Generated files
-.docusaurus
-.cache-loader
+/.*/
+!/.github/
 
 # Misc
 .DS_Store
