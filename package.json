@@ -30,7 +30,7 @@
     "write-translations": "bunx --bun docusaurus write-translations",
     "write-heading-ids": "bunx --bun docusaurus write-heading-ids",
     "typecheck": "bunx --bun tsc",
-    "lint": "oxlint && bunx --bun eslint . --cache",
+    "lint": "oxlint && eslint . --cache",
     "format": "prettier . --write",
     "add": "bun add",
     "remove": "bun remove",
@@ -40,7 +40,7 @@
     "**/*": [
       "prettier --write --ignore-unknown",
       "oxlint --deny-warnings",
-      "bunx --bun eslint --cache --max-warnings 0 --no-warn-ignored"
+      "eslint --cache --max-warnings 0 --no-warn-ignored"
     ]
   },
   "dependencies": {
