@@ -1,5 +1,6 @@
 import type { SidebarsConfig } from '@docusaurus/plugin-content-docs'
-import type { SidebarItemConfig } from '@docusaurus/plugin-content-docs/src/sidebars/types.js'
+
+// import type { SidebarItemConfig } from '@docusaurus/plugin-content-docs/src/sidebars/types.js'
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 

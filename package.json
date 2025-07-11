@@ -1,13 +1,23 @@
 {
   "name": "@effecs/website",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "workspaces": {
     "catalog": {
+      "@eslint/js": "^9.30.1",
+      "@eslint/json": "^0.12.0",
+      "@eslint/markdown": "^6.6.0",
       "@ianvs/prettier-plugin-sort-imports": "^4.4.2",
       "husky": "^9.1.7",
+      "eslint": "^9.30.1",
+      "eslint-config-prettier": "^10.1.5",
+      "eslint-plugin-oxlint": "^1.6.0",
+      "globals": "^16.3.0",
       "lint-staged": "^16.1.2",
-      "prettier": "^3.6.2"
+      "oxlint": "^1.6.0",
+      "prettier": "^3.6.2",
+      "typescript-eslint": "^8.36.0"
     }
   },
   "scripts": {
@@ -21,14 +31,17 @@
     "write-translations": "bunx --bun docusaurus write-translations",
     "write-heading-ids": "bunx --bun docusaurus write-heading-ids",
     "typecheck": "bunx --bun tsc",
-    "format": "prettier . --write --experimental-cli --config-path ../../.prettierrc",
+    "lint": "oxlint && bunx --bun eslint . --cache",
+    "format": "prettier . --write --experimental-cli",
     "add": "bun add",
     "remove": "bun remove",
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{ts,tsx,html,css,json,md,mdx}": [
-      "prettier --write"
+    "**/*": [
+      "prettier --write --experimental-cli --ignore-unknown",
+      "oxlint --deny-warnings",
+      "bunx --bun eslint --cache --max-warnings 0 --no-warn-ignored"
     ]
   },
   "dependencies": {
@@ -44,14 +57,24 @@
     "@docusaurus/module-type-aliases": "3.8.1",
     "@docusaurus/tsconfig": "3.8.1",
     "@docusaurus/types": "3.8.1",
+    "@eslint/css": "^0.9.0",
+    "@eslint/js": "catalog:",
+    "@eslint/json": "catalog:",
+    "@eslint/markdown": "catalog:",
     "@ianvs/prettier-plugin-sort-imports": "catalog:",
     "docusaurus-plugin-typedoc": "^1.4.0",
+    "eslint": "catalog:",
+    "eslint-config-prettier": "catalog:",
+    "eslint-plugin-oxlint": "catalog:",
+    "globals": "catalog:",
     "husky": "catalog:",
     "lint-staged": "catalog:",
+    "oxlint": "catalog:",
     "prettier": "catalog:",
     "typedoc": "^0.28.7",
     "typedoc-plugin-markdown": "^4.7.0",
-    "typescript": "~5.6.2"
+    "typescript": "~5.6.2",
+    "typescript-eslint": "catalog:"
   },
   "browserslist": {
     "production": [

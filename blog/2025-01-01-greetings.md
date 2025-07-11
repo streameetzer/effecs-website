@@ -2,12 +2,12 @@
 slug: greetings
 title: Greetings!
 authors:
-  - author
-  # - name: Jane Doe
-  #   title: Co-creator of Docusaurus 1
-  #   url: https://github.com/JoelMarcey
-  #   image_url: img/favicon.ico
-tags: [hello]
+  name: Jane Doe
+  title: Co-creator of Docusaurus
+  url: https://jane.doe
+  image_url: /img/favicon.ico
+tags:
+  - hello
 ---
 
 Congratulations, you have made your first post!
