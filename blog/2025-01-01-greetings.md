@@ -2,10 +2,11 @@
 slug: greetings
 title: Greetings!
 authors:
-  name: Jane Doe
-  title: Co-creator of Docusaurus
-  url: https://jane.doe
-  image_url: /img/favicon.ico
+  - author
+  ## - name: Jane Doe
+  ##   title: Co-creator of Docusaurus
+  ##   url: https://jane.doe
+  ##   image_url: /img/favicon.ico
 tags:
   - hello
 ---
