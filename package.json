@@ -32,14 +32,14 @@
     "write-heading-ids": "bunx --bun docusaurus write-heading-ids",
     "typecheck": "bunx --bun tsc",
     "lint": "oxlint && bunx --bun eslint . --cache",
-    "format": "prettier . --write --experimental-cli",
+    "format": "prettier . --write",
     "add": "bun add",
     "remove": "bun remove",
     "prepare": "husky"
   },
   "lint-staged": {
     "**/*": [
-      "prettier --write --experimental-cli --ignore-unknown",
+      "prettier --write --ignore-unknown",
       "oxlint --deny-warnings",
       "bunx --bun eslint --cache --max-warnings 0 --no-warn-ignored"
     ]
