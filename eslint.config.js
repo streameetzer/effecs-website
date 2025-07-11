@@ -12,7 +12,7 @@ import tseslint from 'typescript-eslint'
 export default defineConfig([
   globalIgnores(['build/**']),
   {
-    files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
+    files: ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
     plugins: { js },
     extends: ['js/recommended'],
     rules: {
@@ -20,7 +20,7 @@ export default defineConfig([
     },
   },
   {
-    files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
+    files: ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
   },
   // fix (https://typescript-eslint.io/getting-started/typed-linting/)
